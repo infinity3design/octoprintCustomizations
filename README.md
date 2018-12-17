@@ -25,7 +25,7 @@ Decreases the camera focus value by 5, which is the incremental limit for the uv
   actions:
   - name: Initialize Camera
     action: configureCamera
-    command: sh /usr/bin/cameraConfig.sh
+    command: python3 /usr/bin/cameraConfig.py
   - name: Focus Nearer
     action: adjustFocusNear
     command: python3 /usr/bin/adjustCameraFocusNear.py
