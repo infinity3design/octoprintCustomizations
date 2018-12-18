@@ -20,6 +20,10 @@ Increases the camera exposure value by 15. Initializes by setting exposure mode 
 Increases the camera focus value by 5, which is the incremental limit for the uvcdynctrl value. Initializes by turning off autofocus, then getting the current exposure value.
 ## adjustCameraFocusFar.py
 Decreases the camera focus value by 5, which is the incremental limit for the uvcdynctrl value. If statement prevents attempting to send an absolute focus value less than 5. Initializes by turning off autofocus, then getting the current exposure value.
+## cameraZoomReset.py
+Resets the absolute zoom to a value of 100.
+## cameraZoomIn.py
+Increases the camera absolute zoom by a value of 20. If statement prevents attempting to send an absolute zoom value greater than 180.
 ## OctoPrint control utilizes the following system controls added to ~/.octoprint/config.yaml
 ```system:
   actions:
@@ -36,4 +40,11 @@ Decreases the camera focus value by 5, which is the incremental limit for the uv
     action: adjustExposureIncrease
     command: python3 /usr/bin/adjustCameraExposureIncrease.py
   - name: Decrease Exposure
+    - name: Increase Exposure
+    action: zoomReset
+    command: python3 /usr/bin/cameraZoomReset.py
+  - name: Reset Zoom
+    action: zoomIn
+    command: python3 /usr/bin/cameraZoomIn.py
+  - name: Zoom In
 ```
