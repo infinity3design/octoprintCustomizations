@@ -1,12 +1,12 @@
 import os
 import time
 
-os.system('sudo uvcdynctrl -s "Focus, Auto" 0')
-os.system('sudo uvcdynctrl -s "Focus (absolute)" 15')
+os.system('uvcdynctrl -s "Focus, Auto" 0')
+os.system('uvcdynctrl -s "Focus (absolute)" 15')
 
-os.system('sudo uvcdynctrl -s "Exposure, Auto" 3')
+os.system('uvcdynctrl -s "Exposure, Auto" 3')
 time.sleep(3)
-os.system('sudo uvcdynctrl -s "Exposure, Auto" 1')
+os.system('uvcdynctrl -s "Exposure, Auto" 1')
 
 currentExposureValue = int(os.popen('uvcdynctrl -g "Exposure (Absolute)"').read())
 
@@ -16,4 +16,4 @@ baselineExposureValueCommand = 'uvcdynctrl -s "Exposure (Absolute)" ' +  str(bas
 
 os.system(baselineExposureValueCommand)
 
-os.system('sudo uvcdynctrl -s "Saturation" 155')
+os.system('uvcdynctrl -s "Saturation" 155')
