@@ -40,11 +40,12 @@ Increases the camera absolute zoom by a value of 20. If statement prevents attem
     action: adjustExposureIncrease
     command: python3 /usr/bin/adjustCameraExposureIncrease.py
   - name: Decrease Exposure
-    - name: Increase Exposure
+    action: adjustExposureDecrease
+    command: python3 /usr/bin/adjustCameraExposureDecrease.py
+  - name: Reset Zoom
     action: zoomReset
     command: python3 /usr/bin/cameraZoomReset.py
-  - name: Reset Zoom
-    action: zoomIn
-    command: python3 /usr/bin/cameraZoomIn.py
   - name: Zoom In
+    action: zoomIn
+    command python3 /usr/bin/cameraZoomIn.py 
 ```
