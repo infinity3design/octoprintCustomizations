@@ -5,7 +5,7 @@ os.system('sudo uvcdynctrl -s "Exposure, Auto" 1')
 currentExposureValue = int(os.popen('uvcdynctrl -g "Exposure (Absolute)"').read())
 
 if currentExposureValue > 0:
-    newExposureValue = currentExposureValue - 15
+    newExposureValue = currentExposureValue - 30
 else:
     newExposureValue = currentExposureValue
 
