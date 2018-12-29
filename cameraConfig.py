@@ -10,7 +10,7 @@ os.system('uvcdynctrl -s "Exposure, Auto" 1')
 
 currentExposureValue = int(os.popen('uvcdynctrl -g "Exposure (Absolute)"').read())
 
-baselineExposureValue = currentExposureValue / 3
+baselineExposureValue = currentExposureValue / 2
 
 baselineExposureValueCommand = 'uvcdynctrl -s "Exposure (Absolute)" ' +  str(baselineExposureValue)
 
