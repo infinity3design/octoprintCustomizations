@@ -29,23 +29,23 @@ Increases the camera absolute zoom by a value of 20. If statement prevents attem
   actions:
   - name: Initialize Camera
     action: configureCamera
-    command: python3 /usr/bin/cameraConfig.py
+    command: python3 /usr/local/bin/octoprintCustomizations/cameraConfig.py
   - name: Focus Nearer
     action: adjustFocusNear
-    command: python3 /usr/bin/adjustCameraFocusNear.py
+    command: python3 /usr/local/bin/octoprintCustomizations/adjustCameraFocusNear.py
   - name: Focus Further
     action: adjustFocusFar
-    command: python3 /usr/bin/adjustCameraFocusFar.py
+    command: python3 /usr/local/bin/octoprintCustomizations/adjustCameraFocusFar.py
   - name: Increase Exposure
     action: adjustExposureIncrease
-    command: python3 /usr/bin/adjustCameraExposureIncrease.py
+    command: python3 /usr/local/bin/octoprintCustomizations/adjustCameraExposureIncrease.py
   - name: Decrease Exposure
     action: adjustExposureDecrease
-    command: python3 /usr/bin/adjustCameraExposureDecrease.py
+    command: python3 /usr/local/bin/octoprintCustomizations/adjustCameraExposureDecrease.py
   - name: Reset Zoom
     action: zoomReset
-    command: python3 /usr/bin/cameraZoomReset.py
+    command: python3 /usr/local/bin/octoprintCustomizations/cameraZoomReset.py
   - name: Zoom In
     action: zoomIn
-    command python3 /usr/bin/cameraZoomIn.py 
+    command python3 /usr/local/bin/octoprintCustomizations/cameraZoomIn.py 
 ```
