@@ -3,8 +3,8 @@ Various scripts and edited config files for customizing OctoPrint/OctoPi
 # To install
 - Establish SSH connection with Raspberry Pi
 - Execute the following commands:
--- cd /usr/local
--- sudo git clone http://github.com/infinity3design/octoprintCustomizations
+  - cd /usr/local
+  - sudo git clone http://github.com/infinity3design/octoprintCustomizations
 - Edit ~/.octoprint/confg.yaml as shown at the bottom of this README.md file
 # Camera setting scripts utilizing uvcdynctrl. See https://www.lavrsen.dk/foswiki/bin/view/Motion/SupportQuestion2011x06x30x111729 for details regarding uvcdynctrl options and controls.
 ## cameraConfig.py
