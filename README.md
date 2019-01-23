@@ -1,5 +1,8 @@
 # octoprintCustomizations
 Various scripts and edited config files for customizing OctoPrint/OctoPi
+
+**Disclaimer:** Though I've tested this successfully with my installation of Octoprint using my Logitech C920, your success may vary. Please be aware of this and use at your own risk.
+
 # To install
 - Establish SSH connection with Raspberry Pi
 - Execute the following commands:
