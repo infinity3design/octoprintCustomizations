@@ -7,9 +7,11 @@ Though I've tested this successfully with my installation of Octoprint using my 
 # To install
 - Establish SSH connection with Raspberry Pi
 - Execute the following commands:
+  - sudo apt-get install uvcdynctrl
   - cd /usr/local
-  - sudo git clone http://github.com/infinity3design/octoprintCustomizations
+  - sudo /usr/bin/git clone http://github.com/infinity3design/octoprintCustomizations
 - Edit ~/.octoprint/config.yaml as shown at the bottom of this README.md file
+- Restart OctoPrint
 # Camera setting scripts utilizing uvcdynctrl. See https://www.lavrsen.dk/foswiki/bin/view/Motion/SupportQuestion2011x06x30x111729 for details regarding uvcdynctrl options and controls.
 ## cameraConfig.py
 Sets the camera to an initial state:
